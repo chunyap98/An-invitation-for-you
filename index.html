@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7f4ed">
+<title>Mia's Birthday Priority List ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap');
+:root{--paper:#f7f4ed;--ink:#37433c;--muted:#7c8279;--rose:#bc807d;--pink:#f1e2df;--sage:#e6eadf;--gold:#ab9062;--line:#e5e1d7;--serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.6;background-image:radial-gradient(ellipse at 0 10%,#eee4dc88,transparent 40%),radial-gradient(ellipse at 100% 40%,#e7eadf88,transparent 40%)}button,input,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.3;cursor:default}button,a,input,textarea{outline-offset:4px}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--rose)}button{color:inherit}main{max-width:850px;margin:auto;padding:28px 24px 60px}.topbar{display:flex;justify-content:space-between;gap:12px;text-transform:uppercase;font-size:10px;letter-spacing:2.5px;color:var(--muted);padding-bottom:22px;border-bottom:1px solid var(--line)}.topbar span:last-child{color:var(--rose)}header{text-align:center;padding:48px 0 26px}.eyebrow{text-transform:uppercase;font-size:10px;letter-spacing:3px;color:var(--gold)}.flower{width:66px;height:72px;margin:0 auto 16px;display:block}h1{font-family:var(--serif);font-weight:500;font-size:clamp(39px,7.5vw,65px);line-height:1.04;letter-spacing:-1.5px;margin:16px 0}.heart{color:var(--rose);font-weight:400}header p{font-size:13px;color:var(--muted);margin-top:18px}.letter{max-width:650px;margin:12px auto 42px;padding:28px 36px 24px;background:#fffdf9;border:1px solid var(--line);border-radius:3px;box-shadow:0 8px 32px #584a3210;position:relative;transform:rotate(-.6deg)}.letter:before{content:'';position:absolute;width:86px;height:24px;background:#d9c9a94d;top:-12px;left:calc(50% - 43px);transform:rotate(-5deg)}.letter .dear{font-family:var(--serif);font-size:27px;margin:0 0 10px}.letter p{font-size:13px;line-height:1.9;margin:9px 0;color:#697168}.letter .signature{font-family:var(--serif);font-style:italic;font-size:24px;color:var(--rose);margin:10px 0 0}.section-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:8px}h2{font-family:var(--serif);font-weight:500;font-size:32px;line-height:1.2;margin:0}.pill{white-space:nowrap;background:var(--sage);color:#65745f;border-radius:30px;font-size:10px;letter-spacing:.5px;padding:6px 12px}.help{font-size:12px;color:var(--muted);margin:0 0 22px}.help strong{font-weight:500;color:var(--rose)}.cards{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px}.card{background:#fffefa;border:1px solid var(--line);border-radius:12px;position:relative;transition:border-color .2s,box-shadow .2s;overflow:hidden}.card:hover{border-color:#cfc8b7;box-shadow:0 4px 16px #4e453b06}.card.first{border-color:#cab48e;background:linear-gradient(110deg,#fffdf7,#faf6ed)}.card.done{background:#f0f3eb}.row{display:flex;align-items:center;gap:12px;padding:17px 16px}.drag{touch-action:none;user-select:none;flex-shrink:0;border:0;background:none;font-size:20px;line-height:1;color:#aaa99c;padding:10px 4px;cursor:grab}.rank{font-family:var(--serif);font-size:26px;color:var(--gold);width:26px;text-align:center;flex-shrink:0}.icon{font-size:25px;width:34px;text-align:center;flex-shrink:0}.activity{flex:1;min-width:0}.title{font-size:14px;font-weight:500;line-height:1.45;overflow-wrap:anywhere}.desc{font-size:11px;color:var(--muted);margin-top:2px}.flag{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:3px}.meta{font-size:10px;color:#74856b;margin-top:5px}.actions{display:flex;gap:3px;align-items:center}.arrows{display:flex;flex-direction:column;gap:2px}.iconbtn{background:transparent;border:0;min-width:28px;min-height:27px;padding:2px 5px;border-radius:6px;color:#94978b;font-size:15px}.iconbtn:hover{background:var(--sage);color:var(--ink)}.details-toggle{display:block;width:100%;text-align:left;border:0;border-top:1px solid #ece9e1;background:transparent;padding:7px 18px 8px;font-size:10px;color:var(--muted)}.details-toggle:hover{background:#f4f3ec}.details{border-top:1px solid var(--line);padding:15px 20px;background:#faf9f4}.details label{display:block;font-size:11px;color:#737b6f;margin-bottom:6px}.details textarea{display:block;resize:vertical;min-height:66px;width:100%;border:1px solid var(--line);border-radius:7px;background:#fffefa;padding:10px;color:var(--ink);font-size:12px}.fulfill{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:12px}.fulfill label{display:flex;align-items:center;gap:7px;margin:0;cursor:pointer}.fulfill input[type=checkbox]{accent-color:#7f9176;width:16px;height:16px}.fulfill input[type=date]{border:1px solid var(--line);background:#fffefa;border-radius:6px;padding:5px 8px;color:var(--ink);font-size:12px;max-width:100%}.date-label{font-size:11px;color:var(--muted)}[hidden]{display:none!important}.add-box{margin:18px 0 24px;border:1px dashed #c9cbbd;border-radius:12px;padding:18px;background:#edf0e542}.add-box label{display:block;font-family:var(--serif);font-size:23px;margin-bottom:9px}.add-controls{display:flex;gap:9px}.add-controls input{flex:1;min-width:0;border:1px solid var(--line);background:#fffefa;border-radius:7px;padding:11px 13px;font-size:12px;color:var(--ink)}.btn{border:1px solid var(--line);background:#fffdf8;padding:11px 18px;border-radius:7px;font-size:12px;transition:background .2s,transform .2s}.btn:hover{background:#eeeade;transform:translateY(-1px)}.btn.primary{background:var(--ink);color:#fffdf8;border-color:var(--ink)}.btn.primary:hover{background:#506050}.submit-area{text-align:center;margin:26px 0}.submit-area .primary{padding:16px 38px;border-radius:40px;font-size:13px}.small{font-size:10px;color:var(--muted)}.utilities{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:18px}.textbtn{border:0;background:transparent;color:var(--muted);font-size:11px;text-decoration:underline;text-underline-offset:4px;padding:8px}footer{text-align:center;border-top:1px solid var(--line);padding-top:23px;margin-top:42px;font-size:10px;letter-spacing:1px;color:var(--muted)}footer span{color:var(--rose)}.summary{padding-top:12px}.summary-intro{text-align:center;margin:6px 0 28px}.summary-intro h2{font-size:43px;margin:10px 0}.summary-intro p{color:var(--muted);font-size:12px}.summary-list{list-style:none;padding:0;display:grid;gap:12px}.summary-card{border:1px solid var(--line);background:#fffdf8;border-radius:12px;padding:20px;display:flex;gap:18px;align-items:flex-start}.summary-card:first-child{border-color:#c7ae80;background:#fcf5e7}.summary-card .rank{font-size:34px}.summary-text{flex:1;min-width:0}.summary-title{font-family:var(--serif);font-size:24px;line-height:1.25;overflow-wrap:anywhere}.summary-note{font-size:12px;color:var(--muted);white-space:pre-wrap;overflow-wrap:anywhere;margin:10px 0 0}.final-note{text-align:center;padding:28px 12px;font-family:var(--serif);font-style:italic;font-size:28px;line-height:1.4;color:#707d65}.summary-buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}.empty{text-align:center;padding:30px;color:var(--muted);border:1px dashed var(--line);border-radius:10px}.dragging{opacity:.2}.ghost{position:fixed;z-index:1000;pointer-events:none;opacity:.96;box-shadow:0 18px 40px #37433c35;transform:rotate(1deg);margin:0}.drag-active{user-select:none;cursor:grabbing}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--ink);color:white;border-radius:30px;padding:11px 21px;font-size:12px;z-index:2000;width:max-content;max-width:90%;text-align:center}.live{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}dialog{border:1px solid var(--line);border-radius:14px;max-width:400px;width:calc(100% - 36px);padding:26px;background:var(--paper);color:var(--ink)}dialog::backdrop{background:#27342b66;backdrop-filter:blur(3px)}dialog h2{font-size:28px}dialog p{font-size:13px;color:var(--muted)}.dialog-actions{display:flex;justify-content:flex-end;gap:8px}.storage-warning{padding:12px;background:#f3e3d5;font-size:12px;border-radius:8px;margin-bottom:18px}
+@media(max-width:540px){main{padding:20px 15px 36px}.topbar{font-size:8px;letter-spacing:1.5px}header{padding:36px 0 22px}.letter{padding:24px 23px;margin-bottom:34px}.row{padding:13px 10px;gap:7px}.rank{font-size:23px;width:23px}.icon{font-size:22px;width:29px}.title{font-size:12px}.desc{font-size:10px}.drag{font-size:18px;padding:12px 3px}.iconbtn{min-width:27px;min-height:30px}.section-head h2{font-size:28px}.pill{font-size:9px;padding:5px 9px}.actions{gap:0}.summary-title{font-size:22px}.summary-card{padding:17px;gap:12px}.final-note{font-size:25px}.add-controls .btn{padding:10px 13px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+@media print{body{background:white}main{max-width:none}.topbar,header,.letter,#editor,.summary-buttons,.utilities,footer,.toast{display:none!important}#summary{display:block!important}.summary-card{break-inside:avoid}.summary-intro:before{content:"Mia's Birthday Priority List ♡";font-family:Georgia,serif;font-size:22px}}
+
+/* Invitation cover. */
+.invitation{min-height:100svh;display:grid;place-items:center;padding:30px 18px;position:relative;overflow:hidden}
+.invitation:before,.invitation:after{content:'♡';position:absolute;font-family:var(--serif);font-size:260px;color:#bc807d0b;pointer-events:none;transform:rotate(-18deg);left:-40px;top:0}
+.invitation:after{left:auto;top:auto;right:-25px;bottom:-80px;transform:rotate(18deg)}
+.invite-card{width:100%;max-width:590px;text-align:center;background:#fffdf8ed;border:1px solid #ded5c3;border-radius:150px 150px 16px 16px;padding:42px 28px 28px;box-shadow:0 22px 80px #55452b0d;position:relative;z-index:1}
+.invite-seal{width:58px;height:58px;display:grid;place-items:center;margin:0 auto 19px;border:1px solid #c7ad8280;border-radius:50%;color:var(--rose);font-size:32px;font-family:var(--serif);background:#f4e8df}
+.invite-card h1{font-size:clamp(39px,8vw,57px);line-height:1.08;margin:14px 0 19px}.invite-greeting{font-family:var(--serif);font-style:italic;font-size:25px;color:var(--rose);margin:17px 0 0}
+.invite-copy{max-width:390px;margin:0 auto;color:#737c70;font-size:13px;line-height:1.85}.invite-copy p{margin:12px 0}.invite-sign{font-family:var(--serif);font-style:italic;font-size:24px;color:var(--rose);margin:15px 0 4px}
+.answer-arena{position:relative;width:100%;height:235px;margin:8px 0 0;background:radial-gradient(ellipse,#f3e9df66,transparent 72%);user-select:none;-webkit-user-select:none;}
+.answer-arena button{position:absolute;min-height:48px;border-radius:30px;padding:12px 18px;white-space:nowrap;font-size:12px;-webkit-tap-highlight-color:transparent;cursor:pointer;}
+#inviteYes{left:calc(50% - 142px);top:95px;z-index:10;background:var(--ink);color:white;border:1px solid var(--ink);min-width:140px;transition:box-shadow .3s,background .3s}
+#inviteYes:hover{background:#53634c;box-shadow:0 8px 26px #7c8c7040}
+#inviteNo{left:calc(50% + 18px);top:95px;z-index:9;width:110px;background:#f4e8e3;border:1px solid #dfc4bb;color:#896863;transition:left .40s ease-in-out,top .40s ease-in-out,transform .35s ease,opacity .4s;box-shadow:0 5px 15px #bc807d16}
+#inviteNo.wiggle{animation:noWiggle .35s ease}#inviteNo.vanishing{animation:noPoof .65s forwards;pointer-events:none}
+#inviteYes.only-answer{left:calc(50% - 80px);min-width:160px;box-shadow:0 0 0 7px #e6eadf,0 8px 28px #7f91762b}
+.invite-hint{min-height:39px;color:var(--muted);font-size:12px;margin:0 auto 8px;max-width:360px}.invite-footer{font-size:9px;color:var(--gold);letter-spacing:2px;text-transform:uppercase}
+.escape-dots{display:flex;gap:7px;justify-content:center;margin:0 0 14px}.escape-dots span{height:5px;width:5px;border-radius:50%;background:#dedbd1;transition:background .2s,transform .2s}.escape-dots span.active{background:var(--rose);transform:scale(1.3)}
+.escape-cloud{position:absolute;z-index:8;pointer-events:none;color:var(--rose);font-family:var(--serif);font-style:italic;font-size:19px;animation:cloudFloat 1.1s ease-out forwards;white-space:nowrap}
+.sparkle{position:fixed;z-index:2001;pointer-events:none;color:var(--rose);font-size:18px;animation:sparkFly 1s ease-out forwards;--dx:0px;--dy:-80px}
+.cat-mood{font-size:12px;letter-spacing:2px;color:#a58c72;min-height:20px;margin:2px 0 7px}.replay-slot{min-height:42px;margin-bottom:8px}.replay-btn{border:1px solid #dfcfc0;background:#f4eee4;color:#8b755b;border-radius:25px;padding:8px 17px;font-size:11px}.replay-btn:hover{background:#ece3d4}
+@keyframes noWiggle{0%,100%{rotate:0deg}25%{rotate:-10deg}65%{rotate:9deg}}
+@keyframes noPoof{0%{scale:1;opacity:1}35%{scale:1.15}100%{scale:0;opacity:0;rotate:25deg}}
+@keyframes cloudFloat{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(-38px)}}
+@keyframes sparkFly{from{opacity:1;transform:translate(0,0) rotate(0)}to{opacity:0;transform:translate(var(--dx),var(--dy)) rotate(100deg)}}
+@media(max-width:380px){.invite-card{padding:38px 18px 24px}.invite-copy{font-size:12px}.invite-card h1{font-size:38px}#inviteYes{left:calc(50% - 128px);min-width:128px;padding:12px 11px}#inviteNo{left:calc(50% + 10px);width:102px}}
+@media(prefers-reduced-motion:reduce){.sparkle,.escape-cloud{display:none}#inviteNo{transition:none}.vanishing{opacity:0!important}}
+@media print{#invitation,#replayInvitation{display:none!important}}
+
+</style>
+</head>
+<body>
+<section class="invitation" id="invitation" aria-labelledby="inviteTitle">
+<div class="invite-card"><div class="invite-seal" aria-hidden="true">♡</div><div class="eyebrow">A little invitation, just for you</div>
+<p class="invite-greeting">Dear Gongjunim,</p><h1 id="inviteTitle">May I borrow<br>your birthday? <span class="heart">♡</span></h1>
+<div class="invite-copy"><p>I know your birthday is precious.<br>And so is any time I get to spend with you.</p><p>So, may I have a little place in your special day?<br>Let’s make room for good food, happy moments,<br>and a little adventure of our own.</p></div>
+<p class="invite-sign">With love, Ahbuji ♡</p><p class="cat-mood" id="catMood" aria-hidden="true">ฅ^•ﻌ•^ฅ</p>
+<div class="answer-arena" id="answerArena" aria-label="Your answer"><button id="inviteYes" type="button">Yes, with you ♡</button><button id="inviteNo" type="button" aria-label="No — a playful runaway button">No ☺️</button></div>
+<p class="invite-hint" id="inviteHint" aria-live="polite">Psst… “No” is feeling a little mischievous today.</p>
+<div class="escape-dots" id="escapeDots" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+<div class="replay-slot"><button class="replay-btn" id="playAgain" type="button" hidden>Play again ↻</button></div>
+<div class="invite-footer">Made for Mia · by CY</div></div></section>
+<main id="birthdayContent" hidden>
+<div class="topbar"><span>A little birthday something</span><span>Made for Mia · by CY</span></div>
+<header>
+<svg class="flower" viewBox="0 0 80 90" fill="none" aria-hidden="true"><path d="M40 85C41 63 35 47 41 29" stroke="#8c9a7f" stroke-width="1.5"/><path d="M40 68C23 69 20 57 21 53C34 52 39 61 40 68ZM40 57C54 57 62 46 59 42C47 43 41 49 40 57Z" fill="#d9e0cf" stroke="#8c9a7f" stroke-width="1"/><path d="M41 30C21 31 22 15 31 16C28 0 47 2 48 15C62 8 70 24 54 30C63 43 45 49 40 36C29 46 19 33 30 27" fill="#ead6d0" stroke="#bc807d" stroke-width="1.1"/><circle cx="42" cy="26" r="4" fill="#c2a36b"/><path d="M13 20l2-4m-4 1 5 2M65 66l2-4m-4 1 5 2" stroke="#b59a70" stroke-linecap="round"/></svg>
+<div class="eyebrow">Not a wishlist. A little window into your heart.</div>
+<h1>Mia's Birthday<br>Priority List <span class="heart">♡</span></h1>
+<p>If you could choose, what would you want to experience first?</p>
+</header>
+<section class="letter" aria-label="A letter from Ahbuji">
+<p class="dear">Dear Gongjunim,</p>
+<p>Your big day is around the corner! ♡</p>
+<p>I thought it'd be fun to find out what you've been wanting to do, experience or explore.</p>
+<p>It could be a trip you've always wanted to take, a nice dinner, trying something new, or simply spending a lovely day with the people you care about.</p>
+<p>Put them in the order your heart wants. I'll secretly take note of your favourites... who knows, maybe some of them might just happen sooner than you think. ☺️</p>
+<p>Here's to more little adventures, happy moments and lovely surprises in the year ahead.</p>
+<p class="signature">Love,<br>Ahbuji ♡</p>
+</section>
+<div id="storageWarning" class="storage-warning" hidden>Your browser couldn't save this list. You can still use it, but changes may disappear when you close this page. Copy your summary before leaving.</div>
+<section id="editor" aria-labelledby="listTitle">
+<div class="section-head"><h2 id="listTitle">What calls to your heart?</h2><span class="pill" id="count"></span></div>
+<p class="help">Drag the <span aria-hidden="true">⠿</span> handle or use the arrows. <strong>No. 1 is your most wanted.</strong></p>
+<ol id="cards" class="cards" aria-label="Experiences in priority order"></ol>
+<form class="add-box" id="addForm" novalidate><label for="newItem">Something else on your mind?</label><div class="add-controls"><input id="newItem" maxlength="160" placeholder="A little dream, a big adventure…" required autocomplete="off"><button class="btn" id="addButton" type="button">+ Add</button></div></form>
+<div class="submit-area"><button class="btn primary" id="finish">I'm Done Ranking <span aria-hidden="true">♡</span></button><p class="small" id="saveHint">Your draft saves on this device. Finish to save only your top 5 choices.</p></div>
+<div class="utilities"><button class="textbtn" id="reset">Start fresh / reset list</button></div>
+</section>
+<section class="summary" id="summary" hidden aria-labelledby="summaryTitle" tabindex="-1">
+<div class="summary-intro"><div class="eyebrow">Your heart has spoken</div><h2 id="summaryTitle">The moments you're dreaming of <span class="heart">♡</span></h2><p id="summaryCaption"></p></div>
+<ol class="summary-list" id="summaryList"></ol>
+<div class="final-note">Now I know what matters to you.<br>Let's make some of these happen, one by one. ♡</div>
+<div class="summary-buttons"><button class="btn primary" id="rearrange">Rearrange my list</button><button class="btn" id="copy">Copy summary for ahbuji</button><button class="btn" id="print">Print / save as PDF</button></div>
+<p class="small" style="text-align:center">This little list stays in this browser. Only your top 5 choices are saved when you finish. Nothing is sent automatically.</p>
+</section>
+<div style="text-align:center;margin-top:30px"><button class="textbtn" id="replayInvitation" type="button">Replay birthday invitation ↻</button></div>
+<footer>A few dreams, a little love, and plenty of time for us. <span>♡</span><br><span style="font-size:9px;letter-spacing:2px">GONGJUNIM & ahbuji</span></footer>
+</main>
+<div id="live" class="live" aria-live="polite" aria-atomic="true"></div><div id="toast" class="toast" role="status" hidden></div>
+<dialog id="resetDialog" aria-labelledby="resetTitle"><h2 id="resetTitle">A fresh little beginning?</h2><p>This restores the original 7 experiences and clears your custom items, personal notes. This can't be undone.</p><div class="dialog-actions"><button class="btn" id="cancelReset">Keep my list</button><button class="btn primary" id="confirmReset">Reset everything</button></div></dialog>
+<script>
+'use strict';
+// Edit these activities and descriptions to personalize the initial list.
+const DEFAULT_ACTIVITIES = [
+ [
+  "✈️",
+  "A trip overseas",
+  "A new country, new sights, and memories to bring home"
+ ],
+ [
+  "🏕️",
+  "A little adventure in Malaysia",
+  "Discover somewhere new, a little closer to home"
+ ],
+ [
+  "🍷",
+  "A fancy dinner together",
+  "Dress up and enjoy a special dining experience together"
+ ],
+ [
+  "👨‍👩‍👧",
+  "More moments with family",
+  "Make time for the people you love"
+ ],
+ [
+  "🎨",
+  "A creative date together",
+  "Pottery, painting, flower arranging—or something entirely new"
+ ],
+ [
+  "💆",
+  "A little self-care day",
+  "Spa, massage, and a well-deserved moment to relax"
+ ],
+ [
+  "💪",
+  "Try something active",
+  "A new sport, a fun workout, or a little challenge together"
+ ]
+];
+const STORAGE_KEY = 'mia-birthday-priorities-v1';
+const $ = id => document.getElementById(id);
+let serial=0;
+const uid=()=>Date.now().toString(36)+'-'+(++serial)+'-'+Math.random().toString(36).slice(2,8);
+const fresh=()=>({items:DEFAULT_ACTIVITIES.map(([emoji,title,description])=>({id:uid(),emoji,title,description,note:'',done:false,date:''})),submitted:false});
+let state=fresh(),storageOK=true,toastTimer,drag=null;
+const openDetails=new Set();
+// All personal text is inserted with textContent/value, never interpreted as HTML.
+const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
+try{
+ const saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'null');
+ if(saved&&Array.isArray(saved.items)&&saved.items.every(i=>i&&typeof i.id==='string'&&typeof i.title==='string')&&new Set(saved.items.map(i=>i.id)).size===saved.items.length){
+  state={submitted:!!saved.submitted,items:saved.items.map(i=>({id:i.id,title:i.title,emoji:typeof i.emoji==='string'?i.emoji:'✨',description:typeof i.description==='string'?i.description:'',note:typeof i.note==='string'?i.note:'',done:!!i.done,date:typeof i.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(i.date)?i.date:''}))};
+ }
+}catch(e){storageOK=false;}
+// Normalize older saved activity names, keeping their order and personal notes.
+const retiredTitles=new Set(['学门新课','LEGO date','Museum & art gallery','Something unexpected','Café hopping']);
+const activityAliases=new Map([
+ ['出国旅行',0],['国内探险',1],['Nice dinner + gift',2],['Fancy dinner + gift',2],['Fancy dinner',2],
+ ['Spend time with family',3],['Art & creative experience',4],['Self-care day',5],['Fitness challenge',6]
+]);
+state.items=state.items.filter(item=>!retiredTitles.has(item.title));
+state.items.forEach(item=>{
+ item.done=false;item.date='';
+ const index=activityAliases.get(item.title);
+ if(index!==undefined){const [emoji,title,description]=DEFAULT_ACTIVITIES[index];Object.assign(item,{emoji,title,description});}
+});
+function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify({...state,items:state.submitted?state.items.slice(0,5):state.items}));storageOK=true;}catch(e){storageOK=false;}updateStorage();}
+function updateStorage(){$('storageWarning').hidden=storageOK;$('saveHint').textContent=storageOK?'Your draft saves on this device. Finish to save only your top 5 choices.':'Saving is unavailable in this browser. Keep this page open.';}
+function toast(message){$('toast').textContent=message;$('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').hidden=true,3000);}
+function announce(text){$('live').textContent='';setTimeout(()=>$('live').textContent=text,30);}
+function button(text,label,action,cls='iconbtn'){const b=el('button',cls,text);b.type='button';b.setAttribute('aria-label',label);b.addEventListener('click',action);return b;}
+function localDate(){const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;}
+function dateText(date){if(!date)return '';const d=new Date(date+'T12:00:00');return Number.isNaN(d.getTime())?date:d.toLocaleDateString(undefined,{day:'numeric',month:'short',year:'numeric'});}
+function metaText(item){return "";}
+function moveItem(id,step){const i=state.items.findIndex(x=>x.id===id),j=i+step;if(j<0||j>=state.items.length)return;const [item]=state.items.splice(i,1);state.items.splice(j,0,item);save();renderCards();const card=[...$('cards').children].find(c=>c.dataset.id===id);card?.querySelector(step<0?'.up':'.down')?.focus();announce(`${item.title} moved to priority ${j+1}.`);}
+function renderCards(){
+ const list=$('cards');list.replaceChildren();
+ state.items.forEach((item,index)=>{
+  const card=el('li','card'+(index===0?' first':'')+(item.done?' done':''));card.dataset.id=item.id;
+  const row=el('div','row');
+  const handle=button('⠿','Drag to reorder '+item.title,()=>{} ,'drag');handle.setAttribute('title','Drag to reorder; use adjacent arrow buttons with a keyboard');handle.addEventListener('pointerdown',e=>startDrag(e,card));
+  const rank=el('span','rank',String(index+1).padStart(2,'0'));rank.setAttribute('aria-label','Priority '+(index+1));
+  const emoji=el('span','icon',item.emoji);emoji.setAttribute('aria-hidden','true');
+  const content=el('div','activity');if(index===0)content.append(el('div','flag','My first wish'));
+  content.append(el('div','title',item.title));if(item.description)content.append(el('div','desc',item.description));
+  const meta=el('div','meta',metaText(item));meta.hidden=!meta.textContent;content.append(meta);
+  const actions=el('div','actions'),arrows=el('div','arrows');
+  const up=button('↑','Move '+item.title+' up',()=>moveItem(item.id,-1),'iconbtn up');up.disabled=index===0;
+  const down=button('↓','Move '+item.title+' down',()=>moveItem(item.id,1),'iconbtn down');down.disabled=index===state.items.length-1;
+  arrows.append(up,down);
+  const remove=button('×','Remove '+item.title,()=>{state.items=state.items.filter(i=>i.id!==item.id);openDetails.delete(item.id);save();renderCards();announce(item.title+' removed.');toast('Experience removed');$('newItem').focus();});actions.append(arrows,remove);row.append(handle,rank,emoji,content,actions);
+  const toggle=button('', 'Add or edit additional notes or wishes for '+item.title,()=>{const opened=details.hidden;details.hidden=!opened;toggle.setAttribute('aria-expanded',String(opened));if(opened)openDetails.add(item.id);else openDetails.delete(item.id);updateToggle();},'details-toggle');
+  const details=el('div','details');details.id='details-'+item.id;details.hidden=!openDetails.has(item.id);toggle.setAttribute('aria-controls',details.id);toggle.setAttribute('aria-expanded',String(!details.hidden));
+  function updateToggle(){toggle.textContent=(details.hidden?'＋ ':'− ')+(item.note?'Your notes & wishes':'Add notes or wishes');}updateToggle();
+  const noteLabel=el('label','',"Any extra notes or wishes for this experience? (optional)");noteLabel.htmlFor='note-'+item.id;
+  const note=el('textarea');note.id=noteLabel.htmlFor;note.placeholder='A place you’d love to go, something you’d like to try, or a little detail to make this wish yours…';note.value=item.note;note.maxLength=3000;note.addEventListener('input',()=>{item.note=note.value;save();updateToggle();});
+  details.append(noteLabel,note);card.append(row,toggle,details);list.append(card);
+ });
+ if(!state.items.length){const empty=el('li','empty','A blank page for your dreams. Add your first experience below.');list.append(empty);}
+ $('count').textContent=state.items.length+' possibilities';$('finish').disabled=state.items.length===0;
+}
+// Pointer Events support mouse, pen and touch without a library. Only the
+// handle suppresses touch scrolling; the rest of each card scrolls normally.
+function startDrag(e,card){
+ if(e.button!==0||drag)return;e.preventDefault();
+ const rect=card.getBoundingClientRect(),ghost=card.cloneNode(true);
+ ghost.removeAttribute('id');ghost.querySelectorAll('[id]').forEach(n=>n.removeAttribute('id'));ghost.setAttribute('aria-hidden','true');ghost.classList.add('ghost');ghost.style.width=rect.width+'px';ghost.style.left=rect.left+'px';ghost.style.top=rect.top+'px';document.body.append(ghost);card.classList.add('dragging');document.body.classList.add('drag-active');
+ drag={id:card.dataset.id,card,ghost,pointerId:e.pointerId,handle:e.currentTarget,offset:e.clientY-rect.top,y:e.clientY,startOrder:state.items.map(i=>i.id),raf:0};
+ try{e.currentTarget.setPointerCapture(e.pointerId);}catch(err){}
+ drag.raf=requestAnimationFrame(dragFrame);
+}
+function placeDrag(){if(!drag)return;drag.ghost.style.top=(drag.y-drag.offset)+'px';const siblings=[...$('cards').children].filter(c=>c!==drag.card);const next=siblings.find(c=>{const r=c.getBoundingClientRect();return drag.y<r.top+r.height/2;});if(next){if(drag.card.nextElementSibling!==next)$('cards').insertBefore(drag.card,next);}else if($('cards').lastElementChild!==drag.card){$('cards').append(drag.card);}}
+function dragFrame(){if(!drag)return;const edge=90;let delta=0;if(drag.y<edge)delta=-Math.min(14,(edge-drag.y)/5);else if(drag.y>innerHeight-edge)delta=Math.min(14,(drag.y-innerHeight+edge)/5);if(delta)window.scrollBy(0,delta);placeDrag();drag.raf=requestAnimationFrame(dragFrame);}
+document.addEventListener('pointermove',e=>{if(!drag||e.pointerId!==drag.pointerId)return;e.preventDefault();drag.y=e.clientY;placeDrag();},{passive:false});
+function endDrag(cancel=false){if(!drag)return;const d=drag;drag=null;cancelAnimationFrame(d.raf);d.ghost.remove();d.card.classList.remove('dragging');document.body.classList.remove('drag-active');try{d.handle.releasePointerCapture(d.pointerId);}catch(e){}
+ if(!cancel){const byId=new Map(state.items.map(i=>[i.id,i]));state.items=[...$('cards').children].map(c=>byId.get(c.dataset.id)).filter(Boolean);save();}
+ renderCards();const current=[...$('cards').children].find(c=>c.dataset.id===d.id);current?.querySelector('.drag')?.focus({preventScroll:true});if(!cancel)announce('Moved to priority '+(state.items.findIndex(i=>i.id===d.id)+1)+'.');
+}
+document.addEventListener('pointerup',e=>{if(drag&&e.pointerId===drag.pointerId)endDrag();});document.addEventListener('pointercancel',()=>endDrag(true));window.addEventListener('blur',()=>endDrag(true));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&drag){endDrag(true);announce('Reordering cancelled.');}});
+function renderSummary(){
+ const top=state.items.slice(0,5);$('summaryCaption').textContent=`Your top ${top.length} ${top.length===1?'priority':'priorities'}, in the order your heart chose.`;$('summaryList').replaceChildren();
+ top.forEach((item,index)=>{const c=el('li','summary-card'),n=el('span','rank',String(index+1).padStart(2,'0')),body=el('div','summary-text');body.append(el('div','summary-title',item.emoji+' '+item.title));if(item.description)body.append(el('div','desc',item.description));if(item.note)body.append(el('p','summary-note',item.note));if(metaText(item))body.append(el('p','meta',metaText(item)));c.append(n,body);$('summaryList').append(c);});
+}
+function showView(scroll=false){$('editor').hidden=state.submitted;$('summary').hidden=!state.submitted;if(state.submitted)renderSummary();else renderCards();if(scroll){const target=state.submitted?$('summary'):$('listTitle');target.setAttribute('tabindex','-1');target.focus({preventScroll:true});target.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});}}
+// Shared addition handler for touch, mouse and keyboard.
+function addExperience(event){
+ if(event)event.preventDefault();
+ const input=$('newItem'),title=input.value.trim();
+ if(!title){toast('Write an experience first ♡');input.focus();return;}
+ const item={id:uid(),emoji:'✨',title:title.slice(0,160),description:'A little dream of my own',note:'',done:false,date:''};
+ state.submitted=false;state.items.push(item);input.value='';input.setCustomValidity('');
+ renderCards();save();announce(item.title+' added as priority '+state.items.length+'.');toast('Added as priority '+state.items.length+' ♡');
+ const card=[...$('cards').children].find(c=>c.dataset.id===item.id);
+ if(card)card.scrollIntoView({behavior:'smooth',block:'nearest'});
+ input.focus({preventScroll:true});
+}
+$('addButton').addEventListener('click',addExperience);
+$('addForm').addEventListener('submit',addExperience);
+$('newItem').addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.isComposing){event.preventDefault();addExperience(event);}});
+$('newItem').addEventListener('input',event=>event.target.setCustomValidity(''));
+$('finish').addEventListener('click',()=>{if(!state.items.length)return;state.submitted=true;save();showView(true);});
+$('rearrange').addEventListener('click',()=>{state.submitted=false;const existing=new Set(state.items.map(i=>i.title));for(const [emoji,title,description] of DEFAULT_ACTIVITIES){if(!existing.has(title))state.items.push({id:uid(),emoji,title,description,note:'',done:false,date:''});}save();showView(true);});
+$('reset').addEventListener('click',()=>$('resetDialog').showModal());$('cancelReset').addEventListener('click',()=>$('resetDialog').close());$('confirmReset').addEventListener('click',()=>{state=fresh();openDetails.clear();save();$('resetDialog').close();showView();announce('Original list restored.');toast('A fresh beginning ♡');});
+function summaryText(){return "Mia's Birthday Priority List ♡\n\n"+state.items.slice(0,5).map((i,n)=>`${n+1}. ${i.emoji} ${i.title}${i.description?' — '+i.description:''}${i.note?'\n   '+i.note:''}${metaText(i)?'\n   '+metaText(i):''}`).join('\n\n')+"\n\nNow I know what matters to you.\nLet's make some of these happen, one by one. ♡";}
+$('copy').addEventListener('click',async()=>{const text=summaryText();try{if(!navigator.clipboard)throw Error('fallback');await navigator.clipboard.writeText(text);toast('Copied — ready to share with ahbuji ♡');}catch(e){const field=el('textarea');field.value=text;field.style.cssText='position:fixed;top:0;left:0;opacity:0';document.body.append(field);field.select();let copied=false;try{copied=document.execCommand('copy');}catch(err){}field.remove();if(copied)toast('Copied — ready to share with ahbuji ♡');else{const blob=new Blob([text],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download='Gongjunim-birthday-summary.txt';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('Summary saved as a text file instead.');}}});
+$('print').addEventListener('click',()=>window.print());
+
+// Invitation state is independent of saved rankings and personal notes.
+const ESCAPE_PAUSE_MS=300,FINAL_POOF_DELAY_MS=450,FINAL_HIDE_DELAY_MS=950;
+let noEscapes=0,noBusy=false,coverLeaving=false,gameRound=0;
+const visitedSpots=[],gameTimers=new Set();
+
+function laterInGame(fn,delay){
+ const round=gameRound;
+ const timer=setTimeout(()=>{gameTimers.delete(timer);if(round===gameRound)fn();},delay);
+ gameTimers.add(timer);return timer;
+}
+
+const escapeLines=[
+ ['Oops! Missed me ☺️','Nope! 🏃','Hehe!'],
+ ['Catch me if you can, Gongjunim ♡','Not today!','Zoom!'],
+ ['This “No” clearly skipped leg day… just kidding.','Too slow 😼','Nyoom!'],
+ ['Plot twist: even the button wants us to go together.','Maybe…?','Whoosh!'],
+ ['One last escape. It’s running out of excuses.','Wait— 🙈','Eek!'],
+ ['Poof! “No” has officially taken the day off. Yes? ♡','Bye! ♡','Poof!']
+];
+
+function coverBurst(x,y,count=12){
+ if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ for(let i=0;i<count;i++){
+  const s=el('span','sparkle',['♡','✦','·'][i%3]);s.setAttribute('aria-hidden','true');
+  s.style.left=x+'px';s.style.top=y+'px';s.style.color=['#bc807d','#b19a6b','#8c9a7f'][i%3];
+  const angle=Math.PI*2*i/count;s.style.setProperty('--dx',Math.cos(angle)*(35+Math.random()*65)+'px');s.style.setProperty('--dy',Math.sin(angle)*70-40+'px');
+  document.body.append(s);setTimeout(()=>s.remove(),1050);
+ }
+}
+
+function fleePosition(){
+ const a=$('answerArena'),n=$('inviteNo'),yes=$('inviteYes');
+ const maxX=Math.max(8,a.clientWidth-n.offsetWidth-8),maxY=Math.max(8,a.clientHeight-n.offsetHeight-8);
+ const current={x:n.offsetLeft,top:n.offsetTop};
+ if(!visitedSpots.length)visitedSpots.push(current);
+ const options=[];
+ for(let col=0;col<=14;col++)for(let row=0;row<=12;row++){
+  const x=8+(maxX-8)*col/14,top=8+(maxY-8)*row/12;
+  const overlaps=x<yes.offsetLeft+yes.offsetWidth+12&&x+n.offsetWidth>yes.offsetLeft-12&&top<yes.offsetTop+yes.offsetHeight+12&&top+n.offsetHeight>yes.offsetTop-12;
+  if(!overlaps)options.push({x,top,d:Math.hypot(x-current.x,top-current.top),fresh:Math.min(...visitedSpots.map(p=>Math.hypot(x-p.x,top-p.top)))});
+ }
+ let pool=options.filter(p=>p.d>=65&&p.fresh>=55);
+ if(!pool.length)pool=options.filter(p=>p.d>=45&&p.fresh>=30);
+ if(!pool.length){const best=[...options].sort((a,b)=>b.fresh-a.fresh);pool=best.slice(0,Math.max(1,Math.ceil(best.length/5)));}
+ const pick=pool[Math.floor(Math.random()*pool.length)];
+ if(pick){visitedSpots.push({x:pick.x,top:pick.top});n.style.left=pick.x+'px';n.style.top=pick.top+'px';}
+}
+
+function escapeNo(event){
+ if(event&&event.type==='touchstart')event.preventDefault();
+ if(noBusy||noEscapes>=6||coverLeaving)return;
+ noBusy=true;noEscapes++;
+ const n=$('inviteNo'),a=$('answerArena'),line=escapeLines[noEscapes-1];
+ const cloud=el('span','escape-cloud',line[2]);cloud.setAttribute('aria-hidden','true');
+ cloud.style.left=Math.min(n.offsetLeft,a.clientWidth-75)+'px';
+ cloud.style.top=n.offsetTop+'px';
+ a.append(cloud);setTimeout(()=>cloud.remove(),1150);
+ n.textContent=line[1];$('inviteHint').textContent=line[0];
+ $('catMood').textContent=['ฅ^•ﻌ•^ฅ','(=^･ω･^=)','ฅ(＾・ω・＾ฅ)','(=ↀωↀ=)','(⁄ ⁄•⁄ω⁄•⁄ ⁄)','♡ ฅ^•ﻌ•^ฅ ♡'][noEscapes-1];
+ [...$('escapeDots').children].forEach((dot,index)=>dot.classList.toggle('active',index<noEscapes));
+ n.classList.remove('wiggle');void n.offsetWidth;n.classList.add('wiggle');
+ fleePosition();n.style.transform='rotate('+((noEscapes%2?1:-1)*(3+noEscapes))+'deg)';
+ if(noEscapes===6){
+  n.disabled=true;
+  laterInGame(()=>{n.classList.add('vanishing');const r=n.getBoundingClientRect();coverBurst(r.left+r.width/2,r.top+r.height/2,16);},FINAL_POOF_DELAY_MS);
+  laterInGame(()=>{n.hidden=true;$('inviteYes').classList.add('only-answer');$('inviteYes').textContent='Yes, let’s go ♡';$('playAgain').hidden=false;if(!$('invitation').hidden)$('inviteYes').focus({preventScroll:true});},FINAL_HIDE_DELAY_MS);
+ }else laterInGame(()=>{noBusy=false;},ESCAPE_PAUSE_MS);
+}
+
+function restartInvitation(fromList=false){
+ gameRound++;gameTimers.forEach(clearTimeout);gameTimers.clear();
+ noEscapes=0;noBusy=true;coverLeaving=false;visitedSpots.length=0;
+ const n=$('inviteNo');n.hidden=false;n.disabled=false;n.classList.remove('wiggle','vanishing');n.removeAttribute('style');n.textContent='No ☺️';
+ $('inviteYes').classList.remove('only-answer');$('inviteYes').textContent='Yes, with you ♡';$('playAgain').hidden=true;
+ $('inviteHint').textContent='Round two? That cheeky “No” is ready for another chase ♡';
+ $('catMood').textContent='ฅ^•ﻌ•^ฅ';
+ [...$('escapeDots').children].forEach(dot=>dot.classList.remove('active'));
+ $('answerArena').querySelectorAll('.escape-cloud').forEach(node=>node.remove());
+ if(fromList){$('birthdayContent').hidden=true;$('invitation').hidden=false;window.scrollTo(0,0);}
+ $('inviteYes').focus({preventScroll:true});
+ laterInGame(()=>{noBusy=false;},300);
+}
+
+$('playAgain').addEventListener('click',()=>restartInvitation());
+$('replayInvitation').addEventListener('click',()=>restartInvitation(true));
+
+$('inviteNo').addEventListener('touchstart',escapeNo,{passive:false});
+$('inviteNo').addEventListener('pointerenter',event=>{if(event.pointerType==='mouse')escapeNo(event);});
+$('inviteNo').addEventListener('click',escapeNo);
+
+function handleYes(event){
+ if(event&&event.type==='touchstart')event.preventDefault();
+ if(coverLeaving)return;coverLeaving=true;
+ const r=$('inviteYes').getBoundingClientRect();coverBurst(r.left+r.width/2,r.top+r.height/2,24);
+ gameRound++;gameTimers.forEach(clearTimeout);gameTimers.clear();
+ $('invitation').hidden=true;$('birthdayContent').hidden=false;window.scrollTo(0,0);
+ const heading=$('birthdayContent').querySelector('h1');heading.setAttribute('tabindex','-1');heading.focus({preventScroll:true});
+}
+
+$('inviteYes').addEventListener('touchstart',handleYes,{passive:false});
+$('inviteYes').addEventListener('click',handleYes);
+
+window.addEventListener('resize',()=>{if(noEscapes>0&&noEscapes<6&&!$('invitation').hidden){visitedSpots.length=0;fleePosition();}});
+
+updateStorage();showView();
+</script>
+</body>
+</html>
